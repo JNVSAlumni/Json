@@ -14,7 +14,8 @@ jobs:
         with:
           endpoint: https://script.google.com/macros/s/AKfycby04N7LotTrhxNZ8wMPRW9Pskoo2bRt4HnQ3NwECHGpNK1V3Ywg/exec
           configuration: '{ "method": "GET"}'
-          save-location: dist		  
+          save-location: dist
+          save-name: alumni.json
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
