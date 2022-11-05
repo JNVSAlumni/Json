@@ -9,4 +9,8 @@ jobs:
         with:
           endpoint: https://script.google.com/macros/s/AKfycby04N7LotTrhxNZ8wMPRW9Pskoo2bRt4HnQ3NwECHGpNK1V3Ywg/exec
           configuration: '{ "method": "GET"}'
-          save-location: 'data.json'
+          save-location: 'dist/data.json'
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist
