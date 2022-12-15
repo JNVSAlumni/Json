@@ -27,6 +27,13 @@ jobs:
           configuration: '{ "method": "GET"}'
           save-location: dist
           save-name: accounts
+      - name: Fetch Blogs Summary 📦
+        uses: JamesIves/fetch-api-data-action@v2
+        with:
+          endpoint: https://www.jnvsitamarhi.org/feeds/posts/summary?alt=json&amp;max-results=99999
+          configuration: '{ "method": "GET"}'
+          save-location: dist
+          save-name: blogs
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
