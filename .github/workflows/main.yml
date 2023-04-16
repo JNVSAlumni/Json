@@ -16,7 +16,7 @@ jobs:
       - name: Fetch Alumni Data 📦
         uses: JamesIves/fetch-api-data-action@v2
         with:
-          endpoint: https://script.google.com/macros/s/AKfycby04N7LotTrhxNZ8wMPRW9Pskoo2bRt4HnQ3NwECHGpNK1V3Ywg/exec
+          endpoint: https://script.google.com/macros/s/AKfycbwWwp-7fNlFDg3Z7ytoenJo92z5RaS8J_oOQJh2MpyNPLlH_dRGcqQRNdf9mMezCSKk3g/exec
           configuration: '{ "method": "GET"}'
           save-location: dist
           save-name: alumni
